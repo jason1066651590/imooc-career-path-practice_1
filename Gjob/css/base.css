@@ -1,0 +1,33 @@
+/* 基本默认值 */
+body,ul,li,header,div,img,a,nav,h1,section,span,footer,p,button{
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft YaHei UI";
+}
+body{
+	min-width: 1200px;
+	overflow-x: hidden;
+	background-color: #eee;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+::selection{
+	text-shadow: none;
+	background-color: #f00;
+	color: #fff;
+}
+.browserupgrade{
+	font-size: 20px;
+	color: #f00;
+	text-shadow: 0 0 1px #000;
+}

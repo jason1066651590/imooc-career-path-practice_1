@@ -1,0 +1,62 @@
+/*初始化代码*/
+body,ul,li,h1,form,input,textarea,p { margin: 0; padding: 0; }
+li,p,span,input,a { font-family: 'Microsoft YaHei UI', sans-serif; font-size: 14px; }
+ul,li { list-style: none; }
+img { border: 0; }
+a { text-decoration: none; }
+h1 { font-size: 48px; }
+body { min-width: 1200px; }
+body::-webkit-scrollbar { display: none; }
+
+/*header*/
+header { width: 100%; height: 94px; background-color: #2e2e2e; }
+.container { width: 1200px; margin: 0 auto; }
+.container > a { display: block; float: left; height: 94px; }
+.container > a > img { margin-top: 30px; }
+.container > nav { float: right; }
+.container > nav > a { line-height: 95px; display: block; float: left; width: 156px; text-align: center; color: #fff; }
+.container > nav > a:hover { color: #000; background: #f00; }
+
+/*banner*/
+.banner { display: table; width: 100%; height: 676px; background: url(img/banner.jpg) no-repeat; background-size: cover; }
+.banner > .container { display: table-cell; text-align: center; vertical-align: middle; color: #fff; }
+
+/*section通用样式*/
+.portfolio,.stats,.team,.contact { width: 100%; text-align: center; }
+article > h1 { font-weight: 300; margin-top: 128px; margin-bottom: 52px; letter-spacing: 17px; color: #f46208; }
+article > p { width: 700px; margin: 0 auto; margin-bottom: 72px; }
+
+/*portfolio*/
+.portfolio > img { width: 100%; margin-top: 52px; }
+.portfolio > nav > a { display: inline-block; margin-left: 16px; padding: 14px; border: 1px #f46208 solid; }
+.portfolio > nav > a:first-child { margin-left: 0; }
+.portfolio > nav > a:hover { color: #000; background-color: #f00; }
+.portfolio > nav > a { color: #f46208; }
+
+/*stats*/
+.stats > ul > li { display: inline-block; margin-left: 144px; }
+.stats > ul > li:first-child { margin-left: 0; }
+.stats > ul > li > img,
+.stats > ul > li > span { display: block; }
+.stats > ul > li > img { margin: auto; }
+.stats > ul > li > span { margin-top: 26px; }
+.stats > ul > li > span:last-child { letter-spacing: 5px; color: #f46208; }
+
+/*team*/
+.team { color: #fff; background: #2e2e2e; }
+.team > article > h1 { padding-top: 118px; }
+.team > ul > li { display: inline-block; margin-bottom: 104px; margin-left: 76px; }
+.team > ul > li:first-child { margin-left: 0; }
+.team > ul > li > img { padding: 0; }
+.team > ul > li > span { display: block; width: 270px; }
+
+/*contact*/
+.contact > form { width: 970px; margin: 0 auto; }
+.contact > form > input { width: 464px; height: 52px; margin-left: 26px; }
+.contact > form > input:first-child { margin-bottom: 18px; margin-left: 0; }
+.contact > form > input:last-child { width: 202px; height: 60px; margin-bottom: 112px; color: #fff; border: 0; background-color: #f46208; }
+.contact > form > textarea { line-height: 276px; width: 970px; height: 276px; margin-bottom: 26px; resize:none}
+
+/*footer*/
+footer { display: table; width: 100%; height: 110px; color: #fff; background-color: #000; }
+footer > span { display: table-cell; text-align: center; vertical-align: middle; }

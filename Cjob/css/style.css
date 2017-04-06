@@ -1,0 +1,97 @@
+body {
+	overflow: hidden;
+}
+
+/*草地天空配色 */
+.sky {
+	width: 100%;
+	height: 60vh;
+	background: linear-gradient(to bottom,rgb(196, 228, 253), rgb(255, 255, 2555));
+}
+.grass {
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	background: linear-gradient(to top, rgb(148, 190, 89), rgb(255, 255, 2555));
+}
+
+/* 兔子 */
+img {
+	position: absolute;
+	width: 30vh;
+	height: 30vh;
+	right: 200px;
+	bottom: 50px;
+}
+
+/* 云结构 */
+.structure {	
+	height: 10vw;
+	width: 10vw;
+	background-color: #fff;
+	border-radius: 50%;
+	position: relative;
+	left: 110%;
+}
+.structure:before {
+	content: "";
+	height: 7vw;
+	width: 8vw;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	transform: rotate(45deg) translate(-1vw, 5vw);
+}
+.structure:after {
+	content: "";
+	height: 6vw;
+	width: 17vw;
+	background-color: #fff;
+	border-radius: 45%;
+	position: absolute;
+	transform: rotate(-1deg) translate(-6vw, 3.5vw);
+}
+
+/* 五朵云分布 */
+.clound1,.clound2,.clound3,.clound4,.clound5{
+	position: absolute;
+} 
+.clound1 {
+	opacity: 0.8;
+	top: 15vh;
+	transform: scale(0.8, 0.8);
+	-webkit-animation: move_clound linear 10s infinite;
+			animation: move_clound linear 10s infinite;
+}
+.clound2 {
+	opacity: 0.5;
+	transform: scale(0.7, 0.7);
+	-webkit-animation: move_clound ease-in 10s 1s infinite;
+			animation: move_clound ease-in 10s 1s infinite;
+}
+.clound3 {
+	opacity: 0.9;
+	top: 20vh;
+	transform: scale(0.6, 0.6);
+	-webkit-animation: move_clound ease-out 10s 3s infinite;
+			animation: move_clound ease-out 10s 3s infinite;
+
+}
+.clound4 {
+	opacity: 0.9;
+	top: 30vh;
+	transform: scale(0.5, 0.5);
+	-webkit-animation: move_clound ease-in-out 10s infinite;
+			animation: move_clound ease-in-out 10s infinite;
+}
+.clound5 {
+	opacity: 0.7;
+	transform: scale(0.7, 0.7);
+	-webkit-animation: move_clound 10s ease-out 2s infinite;
+			animation: move_clound 10s ease-out 2s infinite;
+}
+
+@keyframes move_clound {
+	form { margin-left: 110%; }
+	to { margin-left: -120%; }
+}

@@ -1,0 +1,93 @@
+/* 样式初始化 */
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+/*草地天空配色 */
+.sky {
+	width: 100%;
+	height: 60vh;
+	background: -webkit-linear-gradient(to bottom,rgb(196, 228, 253), rgb(255, 255, 2555));
+	background:    -moz-linear-gradient(to bottom,rgb(196, 228, 253), rgb(255, 255, 2555));
+	background:      -o-linear-gradient(to bottom,rgb(196, 228, 253), rgb(255, 255, 2555));
+	background:         linear-gradient(to bottom,rgb(196, 228, 253), rgb(255, 255, 2555));
+}
+.grass {
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	background: -webkit-linear-gradient(to top, rgb(148, 190, 89), rgb(255, 255, 2555));
+	background:    -moz-linear-gradient(to top, rgb(148, 190, 89), rgb(255, 255, 2555));
+	background:      -o-linear-gradient(to top, rgb(148, 190, 89), rgb(255, 255, 2555));
+	background:         linear-gradient(to top, rgb(148, 190, 89), rgb(255, 255, 2555));
+}
+
+/* 云结构 */
+.structure {	
+	height: 10vw;
+	width: 10vw;
+	background-color: #fff;
+	border-radius: 50%;
+	position: relative;
+}
+.structure:before {
+	content: "";
+	height: 7vw;
+	width: 8vw;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	transform: rotate(45deg) translate(-1vw, 5vw);
+}
+.structure:after {
+	content: "";
+	height: 6vw;
+	width: 17vw;
+	background-color: #fff;
+	border-radius: 45%;
+	position: absolute;
+	transform: rotate(-1deg) translate(-6vw, 3.5vw);
+}
+
+/* 五朵云分布 */
+.clound1,.clound2,.clound3,.clound4,.clound5{
+	position: absolute;
+} 
+.clound1 {
+	-webkit-transform: scale(0.8, 0.8) translate(60vw, 15vh);
+	   -moz-transform: scale(0.8, 0.8) translate(60vw, 15vh);
+	    -ms-transform: scale(0.8, 0.8) translate(60vw, 15vh);
+	     -0-transform: scale(0.8, 0.8) translate(60vw, 15vh);
+	        transform: scale(0.8, 0.8) translate(60vw, 15vh);
+}
+.clound2 {
+	-webkit-transform: scale(0.7, 0.7) translate(35vw);
+	   -moz-transform: scale(0.7, 0.7) translate(35vw);
+	    -ms-transform: scale(0.7, 0.7) translate(35vw);
+	     -0-transform: scale(0.7, 0.7) translate(35vw);
+	        transform: scale(0.7, 0.7) translate(35vw);
+}
+.clound3 {
+	-webkit-transform: scale(0.6, 0.6) translate(120vw);
+	   -moz-transform: scale(0.6, 0.6) translate(120vw);
+	    -ms-transform: scale(0.6, 0.6) translate(120vw);
+	     -0-transform: scale(0.6, 0.6) translate(120vw);
+	        transform: scale(0.6, 0.6) translate(120vw);
+
+}
+.clound4 {
+	-webkit-transform: scale(0.5, 0.5) translate(125vw, 30vh);
+	   -moz-transform: scale(0.5, 0.5) translate(125vw, 30vh);
+	    -ms-transform: scale(0.5, 0.5) translate(125vw, 30vh);
+	     -0-transform: scale(0.5, 0.5) translate(125vw, 30vh);
+	        transform: scale(0.5, 0.5) translate(125vw, 30vh);
+}
+.clound5 {
+	-webkit-transform: scale(0.7, 0.7) translate(50vw, 35vh);
+	   -moz-transform: scale(0.7, 0.7) translate(50vw, 35vh);
+	    -ms-transform: scale(0.7, 0.7) translate(50vw, 35vh);
+	     -0-transform: scale(0.7, 0.7) translate(50vw, 35vh);
+	        transform: scale(0.7, 0.7) translate(50vw, 35vh);
+}
