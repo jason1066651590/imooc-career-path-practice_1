@@ -1,7 +1,7 @@
 /*页面头部 */
 header{
 	height: 40px;
-	width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	top: 10px;
 	position: fixed;
@@ -36,6 +36,7 @@ header > nav{
 	height: 40px;
 	float: right;
 	font-size: 0;
+	margin-right: 20px;
 }
 header > nav > a{
 	color: #fff;
