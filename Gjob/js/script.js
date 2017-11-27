@@ -63,7 +63,7 @@ var screenAnimateElements={
 	    '.screen-5__subheading',
 	    '.screen-5__sc5-1',
 	],
-};
+}
 //设置屏内元素为初始状态,页面载入完成后，所有动画元素设置_animate_init
 var setScreenAnimateInit = function(screenCls) {
     var screen = document.querySelector(screenCls); //获取当前屏的元素
@@ -93,7 +93,7 @@ var playScreenAnimateDone=function(screenCls){
 	}
 }
 
-// 滚动的到哪里，就播放到哪里
+// // 滚动的到哪里，就播放到哪里
 var navItems=getAllElem('.header__nav-item');
 var outlineItems=getAllElem('.outline__item');
 var switchNavItemsActive=function(idx){
@@ -108,7 +108,7 @@ var switchNavItemsActive=function(idx){
 }
 switchNavItemsActive(0);
 window.onscroll=function(){
-	var top=document.body.scrollTop;
+	var top=document.documentElement.scrollTop;
 	if (top>60) {
 		addCls(getElem('.header'),'header_status_back');
 		addCls(getElem('.outline'),'outline_status_in');
@@ -143,7 +143,7 @@ window.onscroll=function(){
 var setNavJump=function(i,lib){
 	var item=lib[i];
 	item.onclick=function(){
-		document.body.scrollTop=i*650;
+		document.documentElement.scrollTop=i*650;
 	}
 }
 for(var i=0;i<navItems.length;i++){
